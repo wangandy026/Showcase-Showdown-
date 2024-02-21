@@ -46,4 +46,21 @@ public class PrizesManager {
     {
         prizes.print();
     }
+    public void getIndex(int anIndex)
+    {
+        prizes.getAt(anIndex); 
+    }
+    public void PrintIndex(int anIndex)
+    {
+        System.out.println(prizes.getAt(anIndex).name);
+    }
+    public int addPrices(int anIndex)
+    {
+        int itemPrize = prizes.getAt(anIndex).price;
+        //itemPrize = itemPrize+itemPrize;
+        // System.out.println(itemPrize); 
+        return itemPrize; 
+    }
+    
+
 }

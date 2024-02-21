@@ -157,4 +157,17 @@ public class GenLL <GenericType> {
         }
     }
 
+    public GenericType getAt(int index)
+    {
+        if(index < 0 || index >= size ) // if the index is 0 or bigger than the size of the list 
+            return null; 
+        ListNode temp = head; 
+        for(int i=0; i<index; i++)
+        {
+            temp = temp.link; 
+        }
+        // we set the size to the index of the current 
+        return temp.data; 
+    }
+
 }
